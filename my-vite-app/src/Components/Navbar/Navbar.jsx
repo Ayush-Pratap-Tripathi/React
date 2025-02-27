@@ -1,8 +1,9 @@
-// import React from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Outlet, Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
+    <div>
     <nav>
       <ul>
         <li>
@@ -13,6 +14,8 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
+    <Outlet />
+    </div>
   );
 };
 
